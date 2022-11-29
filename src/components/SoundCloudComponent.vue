@@ -7,7 +7,8 @@ export default {
   },
   data(){
     return {
-      store
+      store,
+      soundCloudLink: 'https://soundcloud.com/alice-caronna/sets/alice-caronna-master/s-EPwfyEXq2lC?si=ac7885dc45e740179b43fb95ecb60e1a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'
     }
   }
 }
@@ -18,7 +19,7 @@ export default {
 
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
       <h2 :class="{'font-size' : isMobile}">Ascolta in anteprima i miei prossimi singoli</h2>
-    <a href="https://soundcloud.com/alice-caronna/sets/alice-caronna-master/s-EPwfyEXq2lC?si=ac7885dc45e740179b43fb95ecb60e1a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><font-awesome-icon icon="fa-brands fa-soundcloud" id="sound-cloud"/></a>
+    <a :href="this.soundCloudLink"><font-awesome-icon icon="fa-brands fa-soundcloud" id="sound-cloud"/></a>
     </div>
    
     
