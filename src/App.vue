@@ -30,7 +30,7 @@ export default {
   computed: {
     photoToggle(){
       let imgPath = ''
-      this.isMobile? imgPath = 'src/assets/Media/WA-img/landing-photo.jpeg' : imgPath = 'src/assets/Media/WA-img/AlterantiveLandingImg.jpeg'
+      this.isMobile? imgPath = '/Media/WA-img/landing-photo.jpeg' : imgPath = '/Media/WA-img/AlterantiveLandingImg.jpeg'
       return imgPath
     }
   },
