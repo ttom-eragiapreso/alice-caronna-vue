@@ -1,0 +1,5 @@
+@mixin objectPosition($width) {
+  @if(($width) > 1200) {
+    object-position: 0px 0px;
+  }
+}
