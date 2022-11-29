@@ -8,10 +8,11 @@ import "swiper/css";
 
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 // import "/style.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 export default {
   name: 'PhotoGalleryComponent',
@@ -29,7 +30,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Pagination, Navigation],
+      modules: [Pagination, Navigation, Autoplay],
     };
   },
 };
@@ -42,6 +43,10 @@ export default {
     <swiper
     :pagination="{
       dynamicBullets: true,
+    }"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: true,
     }"
     :modules="modules"
     :navigation="!isMobile"
