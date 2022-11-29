@@ -69,6 +69,7 @@ export default {
 .em-container {
   height: 85vh;
   background-color: $primary-bg-color;
+  padding: 1rem 0;
 }
 
 #swiper {
