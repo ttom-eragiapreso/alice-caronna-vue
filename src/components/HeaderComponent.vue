@@ -73,11 +73,17 @@ export default {
 .navbar {
   min-height: $header-height;
   border-bottom: 1px solid rgba(0, 0, 0, 0.647);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary-bg-color;
+  z-index: 99999;
 }
 
-header {
-  background-color: $primary-bg-color;
-}
+// header {
+//   background-color: $primary-bg-color;
+// }
 
 .active {
   color: $accent-bg-color;

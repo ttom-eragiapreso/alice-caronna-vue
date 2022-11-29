@@ -34,6 +34,7 @@ export default {
 
 .em-container {
  height: calc(100vh - $header-height);
+ margin-top: $header-height;
  img {
   width: 100%;
   height: 100%;
