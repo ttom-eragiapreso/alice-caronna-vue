@@ -47,7 +47,7 @@ export default {
     id="swiper"
   >
     <swiper-slide v-for="(video, index) in store.gigsVideos" :key="index">
-      <video :src="video.url" controls autoplay></video>
+      <video :src="video.url" controls :autoplay="isMobile"></video>
     </swiper-slide>
   </swiper>
   </div>

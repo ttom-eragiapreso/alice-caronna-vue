@@ -7,9 +7,9 @@ export default {
       store
     }
   },
-  // props: {
-  //   isMobile: Boolean
-  // }
+  props: {
+    isMobile: Boolean
+  }
 }
 </script>
 
@@ -24,7 +24,7 @@ export default {
       <div class="spacer"></div>
       <div class="row row-cols-1 row-cols-lg-auto">
         <div class="col" v-for="(video, index) in store.mvVids" :key="index">
-          <video :src="video.url" controls autoplay></video>
+          <video :src="video.url" controls :autoplay="isMobile"></video>
         </div>
       </div>
     </div>
