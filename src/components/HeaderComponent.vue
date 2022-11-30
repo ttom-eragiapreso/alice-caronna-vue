@@ -34,7 +34,7 @@ export default {
         <a class="navbar-brand fs-3" href="#">{{artistName}}</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>  
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,14 +79,85 @@ export default {
   width: 100%;
   background-color: $primary-bg-color;
   z-index: 99999;
-}
-
-// header {
-//   background-color: $primary-bg-color;
-// }
+}   
 
 .active {
   color: $accent-bg-color;
+}
+
+
+// Hamburgher preso dal sito
+
+#menu_checkbox {
+  display: none;
+}
+
+label {
+  // position: absolute;
+  // top: 50%;
+  // right: 0;
+  // left: 0;
+  display: block;
+  width: 60px;
+  aspect-ratio: 1/1;
+  // margin: 0px auto 0 auto;
+  cursor: pointer;
+}
+
+label:before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f44336;
+  transition: 1.2s cubic-bezier(0, 0.96, 1, 0.02) background-color;
+}
+
+label div {
+  position: relative;
+  top: 0;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+    0.3s ease right;
+  border-radius: 2px;
+}
+
+label div:first-child {
+  transform-origin: 0;
+}
+
+label div:last-child {
+  margin-bottom: 0;
+  transform-origin: 60px;
+}
+
+label div:nth-child(2) {
+  right: 0;
+  width: 60px;
+}
+
+#menu_checkbox:checked + label:before {
+  background-color: #4caf50;
+}
+
+#menu_checkbox:checked + label div:first-child {
+  top: -6px;
+  transform: rotateZ(45deg);
+}
+
+#menu_checkbox:checked + label div:last-child {
+  top: 6px;
+  transform: rotateZ(45deg);
+}
+
+#menu_checkbox:checked + label div:nth-child(2) {
+  width: 85px;
+  top: 0;
+  right: 13px;
+  transform: rotateZ(-45deg);
 }
 
 </style>
