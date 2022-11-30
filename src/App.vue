@@ -53,7 +53,7 @@ export default {
 <BioComponentVue :isMobile="this.isMobile"/>
 <PhotoGalleryComponentVue :isMobile="this.isMobile"/>
 <SoundCloudComponentVue :isMobile="this.isMobile"/>
-<GigsComponentVue/>
+<GigsComponentVue :isMobile="this.isMobile"/>
 <ComingSoonComponentVue :isMobile="this.isMobile"/>
 <FooterComponentVue/>
 

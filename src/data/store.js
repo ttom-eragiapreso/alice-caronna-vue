@@ -96,5 +96,27 @@ export const store = reactive({
     {
       url: '/Media/WA-videos/WhatsApp Video 2022-10-11 at 18.03.36.mp4'
     },
+  ],
+  mvImgs: [
+    {
+      url: '/Media/MV-img/Still (3).jpg'
+    },
+    {
+      url: '/Media/MV-img/Still (4).jpg'
+    },
+    {
+      url: '/Media/MV-img/Still (6).jpg'
+    },
+  ],
+  mvVids: [
+    {
+      url: '/Media/MV-videos/Clip 1~1.mp4'
+    },
+    {
+      url: '/Media/MV-videos/Clip 2~1.mp4'
+    },
+    {
+      url: '/Media/MV-videos/Clip 3~1.mp4'
+    },
   ]
 })

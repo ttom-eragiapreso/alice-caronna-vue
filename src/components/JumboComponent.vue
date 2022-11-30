@@ -23,7 +23,7 @@ export default {
 
   <div class="em-container">
 
-      <img :src="landingImg" :alt="artistName">
+      <img :src="landingImg" :alt="artistName" :class="{'nudge' : isMobile}">
 
   </div>
 </template>
@@ -40,6 +40,10 @@ export default {
   height: 100%;
   object-fit: cover;
  }
+}
+
+.nudge {
+  object-position: -65px 0;
 }
 
 </style>

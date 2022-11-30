@@ -1,6 +1,5 @@
 <script>
 import {store} from '../data/store'
-import VideoComponent from './VideoComponent.vue'
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
@@ -15,13 +14,15 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 export default {
   name: 'GigsComponent',
+  props: {
+    isMobile: Boolean
+  },
   data(){
     return {
       store
     }
   },
   components: {
-    VideoComponent,
     Swiper,
     SwiperSlide
   },
@@ -35,7 +36,7 @@ export default {
 
 <template>
 
-<div class="em-container" id="ph">
+<div class="em-container" id="vi">
     <swiper
     :pagination="{
       dynamicBullets: true,
@@ -61,7 +62,7 @@ export default {
 .em-container {
   height: 80vh;
   background-color: #333;
-  padding: 1.3rem 0;
+  padding: 1.5rem 0;
 }
 
 #swiper {
