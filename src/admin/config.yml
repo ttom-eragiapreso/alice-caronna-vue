@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/Media/WA-img"
+public_folder: "/Media/WA-img"
+collections:
+  - name: "Foto da caricare"
+    label: "photo"
+    folder: "src/data/store.js"
+    create: true
+    slug: slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
+    fields: 
+      - { label: "titolo", name: "title", widget: "string" }
+      - { label: "Img", name: "image", widget: "image" }
