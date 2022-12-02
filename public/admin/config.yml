@@ -8,7 +8,7 @@ collections:
     label: "photo"
     folder: "src/data/store.js"
     create: true
-    slug: slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
-    fields: 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "titolo", name: "title", widget: "string" }
       - { label: "Img", name: "image", widget: "image" }
