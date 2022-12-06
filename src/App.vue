@@ -57,6 +57,7 @@ export default {
 <ComingSoonComponentVue :isMobile="this.isMobile"/>
 <FooterComponentVue/>
 
+
 </template>
 
 
