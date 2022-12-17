@@ -8,7 +8,7 @@ export default {
   data(){
     return {
       store,
-      soundCloudLink: 'https://soundcloud.com/alice-caronna/sets/alice-caronna-master/s-EPwfyEXq2lC?si=ac7885dc45e740179b43fb95ecb60e1a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'
+      soundCloudLink: 'https://soundcloud.com/alice-caronna/sets/alice-new/s-cuTxp5mX8hd?si=27110eeb51114fc9946acf4e0e8ae9d1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'
     }
   }
 }
