@@ -52,7 +52,7 @@ export default {
 
             <ul class="d-flex px-0 pt-3 socials-icons px-lg-3 pt-lg-0 align-items-center">
               <li class="nav-item" v-for="(social, index) in store.socialsIcons" :key="index">
-                <a :href="social.href" class="pe-4">
+                <a :href="social.href" target="_blank" class="pe-4">
                   <font-awesome-icon :icon="social.tag" class="fs-1 align-middle"/>
                 </a>
               </li>

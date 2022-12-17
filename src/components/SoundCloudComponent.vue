@@ -19,7 +19,7 @@ export default {
 
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
       <h2 :class="{'font-size' : isMobile}">Ascolta in anteprima i miei prossimi singoli</h2>
-    <a :href="this.soundCloudLink"><font-awesome-icon icon="fa-brands fa-soundcloud" id="sound-cloud"/></a>
+    <a :href="this.soundCloudLink" target="_blank"><font-awesome-icon icon="fa-brands fa-soundcloud" id="sound-cloud"/></a>
     </div>
    
     
