@@ -43,7 +43,7 @@
         dynamicBullets: true
       }"
       :modules="modules"
-      :navigation="!isMobile"
+      :navigation="true"
       class="mySwiper"
       id="swiper">
       <swiper-slide>
