@@ -72,10 +72,7 @@ export const store = reactive({
   ],
   mvImgs: [
     {
-      url: "/Media/MV-img/mv_1.jpg"
-    },
-    {
-      url: "/Media/MV-img/mv_2.jpg"
+      url: "/Media/MV-img/mv_5.jpg"
     },
     {
       url: "/Media/MV-img/mv_3.jpg"
@@ -84,7 +81,7 @@ export const store = reactive({
       url: "/Media/MV-img/mv_4.jpg"
     },
     {
-      url: "/Media/MV-img/mv_5.jpg"
+      url: "/Media/MV-img/mv_2.jpg"
     }
   ],
   mvVids: [
