@@ -31,8 +31,8 @@
       photoToggle() {
         let imgPath = "";
         this.isMobile
-          ? (imgPath = "/Media/WA-img/landing-photo.jpeg")
-          : (imgPath = "/Media/WA-img/foto_inziale.jpeg");
+          ? (imgPath = "/Media/WA-img/slider_1.jpg")
+          : (imgPath = "/Media/WA-img/slider_1.jpg");
         return imgPath;
       }
     },
