@@ -15,22 +15,22 @@
   export default {
     name: "GigsComponent",
     props: {
-      isMobile: Boolean
+      isMobile: Boolean,
     },
     data() {
       return {
-        store
+        store,
       };
     },
     components: {
       Swiper,
-      SwiperSlide
+      SwiperSlide,
     },
     setup() {
       return {
-        modules: [Pagination, Navigation, Autoplay]
+        modules: [Pagination, Navigation, Autoplay],
       };
-    }
+    },
   };
 </script>
 
@@ -40,12 +40,42 @@
     id="vi">
     <swiper
       :pagination="{
-        dynamicBullets: true
+        dynamicBullets: true,
       }"
       :modules="modules"
       :navigation="true"
       class="mySwiper"
       id="swiper">
+      <swiper-slide>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/QxMyyumYWcE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </swiper-slide>
+      <swiper-slide>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/wR9aiHF0Flg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </swiper-slide>
+      <swiper-slide>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://youtube.com/embed/HnENN5q2kOc?feature=share"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </swiper-slide>
       <swiper-slide>
         <iframe
           width="100%"

@@ -18,12 +18,12 @@
       SoundCloudComponentVue,
       GigsComponentVue,
       ComingSoonComponentVue,
-      FooterComponentVue
+      FooterComponentVue,
     },
     data() {
       return {
         store,
-        isMobile: false
+        isMobile: false,
       };
     },
 
@@ -31,16 +31,16 @@
       photoToggle() {
         let imgPath = "";
         this.isMobile
-          ? (imgPath = "/Media/WA-img/slider_1.jpg")
-          : (imgPath = "/Media/WA-img/slider_1.jpg");
+          ? (imgPath = "/Media/WA-img/jumbo_photo.jpg")
+          : (imgPath = "/Media/WA-img/jumbo_photo.jpg");
         return imgPath;
-      }
+      },
     },
 
     mounted() {
       store.screenWidth = window.screen.width;
       if (store.screenWidth < 1200) this.isMobile = true;
-    }
+    },
   };
 </script>
 
@@ -54,7 +54,7 @@
 
   <BioComponentVue :isMobile="this.isMobile" />
   <PhotoGalleryComponentVue :isMobile="this.isMobile" />
-  <SoundCloudComponentVue :isMobile="this.isMobile" />
+  <!-- <SoundCloudComponentVue :isMobile="this.isMobile" /> -->
   <GigsComponentVue :isMobile="this.isMobile" />
   <ComingSoonComponentVue :isMobile="this.isMobile" />
   <FooterComponentVue />
